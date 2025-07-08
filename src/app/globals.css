@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* @import '../assets/font/font.css'; */
+:root {
+  --primary:#000066;
+  
+}
+
+@theme inline {
+  --color-primary:var(--primary);
+  /* --font-rajdhani: "rajdhani", "sans-serif";  */
+}
