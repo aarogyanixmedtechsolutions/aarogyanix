@@ -147,7 +147,7 @@ export default function ComingSoon() {
           <img
             src="/location.svg"
             alt="location"
-            className="mb-4 lg:w-auto md:w-fit mx-auto"
+            className="mb-4 md:size-[64px] size-[52px] mx-auto"
           />
           <p>📍 E-247, Sumel 11 Indian Textile, Nr. Namaste Circle, Shahibag, Ahmedabad, Gujarat - 380004</p>
         </div>
@@ -175,7 +175,7 @@ export default function ComingSoon() {
         transition={{ delay: 1.6 }}
         className="flex gap-4 mt-6"
       >
-        <a href="#" aria-label="LinkedIn" className="hover:opacity-75">
+        <a href="https://www.linkedin.com/company/aarogyanix" target="_blank" aria-label="LinkedIn" className="hover:opacity-75">
           <img src="/linkedin.svg" alt="LinkedIn" className="md:size-[64px] size-[52px]" />
         </a>
         <a href="#" aria-label="WhatsApp" className="hover:opacity-75">
