@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function ComingSoon() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-08-20") - +new Date();
+    const difference = +new Date("2025-10-31") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
