@@ -169,20 +169,22 @@ export default function Home() {
         </Button>
       </div>
       <div className="container mx-auto py-10 md:py-14 lg:py-20">
-        <div className="grid grid-cols-8">
-          <div className="col-span-3 pr-12 border-r border-[#E5E7EB]">
-            <div className="px-3 py-1 bg-secondary-50 text-gray-800 text-sm rounded-full font-medium w-max">
+        <div className="grid grid-cols-1 lg:grid-cols-8 gap-8 sm:gap-10 lg:gap-16">
+          <div className="lg:col-span-3 lg:pr-12 lg:border-r border-[#E5E7EB]">
+            <div className="px-3 py-1 bg-secondary-50 text-gray-800 text-sm rounded-full font-medium w-max mx-auto lg:mx-0">
               Testimonial
             </div>
-            <p className="text-[#111827] text-2xl sm:text-3xl lg:text-4xl font-manrope font-bold mt-4">
+            <p className="text-[#111827] text-2xl sm:text-3xl lg:text-4xl font-manrope font-bold mt-4 text-center lg:text-start">
               Trusted by Healthcare Leaders Across India.
             </p>
-            <p className="mt-4 text-gray-600 text-sm md:text-base">
+            <p className="mt-4 text-gray-600 text-sm md:text-base text-center lg:text-start">
               Hear from some of our valued partners and clients.
             </p>
-            <Button className="mt-6 sm:mt-8 md:mt-10 lg:mt-12">Contact</Button>
+            <Button className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 mx-auto lg:mx-0">
+              Contact
+            </Button>
           </div>
-          <div className="col-span-5 pl-12">
+          <div className="lg:col-span-5 lg:pl-12">
             <Carousel>
               <CarouselContent>
                 <CarouselItem className="flex gap-14">
@@ -191,7 +193,7 @@ export default function Home() {
                     width={200}
                     height={240}
                     alt="doctor"
-                    className="rounded-2xl w-50"
+                    className="hidden sm:block rounded-2xl w-50"
                   />
                   <div className="flex flex-col justify-between">
                     <p className="text-lg sm:text-xl lg:text-2xl text-[#111827]">
@@ -199,7 +201,7 @@ export default function Home() {
                       significantly improved our ICU workflow. Their support and
                       after-sales service are truly exceptional.
                     </p>
-                    <div className="mt-16">
+                    <div className="mt-10 sm:mt-16">
                       <p className="text-lg text-[#111827]">Dr. Anish Sharma</p>
                       <p className="text-sm mt-0.5 text-[#6B7280]">
                         Head of Critical Care, Apollo Hospital.
@@ -213,7 +215,7 @@ export default function Home() {
                     width={200}
                     height={240}
                     alt="doctor"
-                    className="rounded-2xl w-50"
+                    className="hidden sm:block rounded-2xl w-50"
                   />
                   <div className="flex flex-col justify-between">
                     <p className="text-lg sm:text-xl lg:text-2xl text-[#111827]">
@@ -221,7 +223,7 @@ export default function Home() {
                       significantly improved our ICU workflow. Their support and
                       after-sales service are truly exceptional.
                     </p>
-                    <div className="mt-16">
+                    <div className="mt-10 sm:mt-16">
                       <p className="text-lg text-[#111827]">Dr. Anish Sharma</p>
                       <p className="text-sm mt-0.5 text-[#6B7280]">
                         Head of Critical Care, Apollo Hospital.
@@ -235,7 +237,7 @@ export default function Home() {
                     width={200}
                     height={240}
                     alt="doctor"
-                    className="rounded-2xl w-50"
+                    className="hidden sm:block rounded-2xl w-50"
                   />
                   <div className="flex flex-col justify-between">
                     <p className="text-lg sm:text-xl lg:text-2xl text-[#111827]">
@@ -243,7 +245,7 @@ export default function Home() {
                       significantly improved our ICU workflow. Their support and
                       after-sales service are truly exceptional.
                     </p>
-                    <div className="mt-16">
+                    <div className="mt-10 sm:mt-16">
                       <p className="text-lg text-[#111827]">Dr. Anish Sharma</p>
                       <p className="text-sm mt-0.5 text-[#6B7280]">
                         Head of Critical Care, Apollo Hospital.
@@ -252,15 +254,16 @@ export default function Home() {
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <div className="flex gap-4 absolute bottom-0 right-0">
-                <CarouselPrevious className="static" />
-                <CarouselNext className="static" />
+              <div className="flex gap-4 justify-end sm:absolute bottom-0 right-0 mt-4 sm:mt-0">
+                <CarouselPrevious className="static translate-0" />
+                <CarouselNext className="static translate-0" />
               </div>
             </Carousel>
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#DFDFFF] from-[1%] to-white to-[99%] py-10 md:py-14 lg:py-20">
+
+      {/* <div className="bg-gradient-to-r from-[#DFDFFF] from-[1%] to-white to-[99%] py-10 md:py-14 lg:py-20">
         <div className="container grid grid-cols-2">
           <div className="flex flex-col gap-5 justify-center">
             <p className="text-5xl text-primary font-semibold leading-15">
@@ -279,6 +282,39 @@ export default function Home() {
             </Button>
           </div>
           <Image src="/image8.png" width={653} height={464} alt="product" />
+        </div>
+      </div> */}
+
+      <div className="bg-gradient-to-r from-[#DFDFFF] from-[1%] to-white to-[99%] py-10 md:py-14 lg:py-20">
+        <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left Text */}
+          <div className="flex flex-col gap-5 text-center lg:text-left justify-center">
+            <p className="text-3xl sm:text-4xl lg:text-5xl text-primary font-semibold leading-tight">
+              Ready to Elevate Your Healthcare Facility?
+            </p>
+            <p className="text-[#272C33] font-medium text-sm sm:text-base max-w-xl mx-auto lg:mx-0">
+              Contact our expert team to learn more about how Comen&apos;s
+              advanced solutions can meet your specific needs.
+            </p>
+            <Button
+              className="flex items-center justify-center gap-2 w-full sm:w-max mx-auto lg:mx-0"
+              variant="secondary"
+            >
+              <span className="size-2 block bg-success-500 rounded-full"></span>
+              Request a Demo
+            </Button>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex justify-center lg:justify-end">
+            <Image
+              src="/image8.png"
+              width={653}
+              height={464}
+              alt="product"
+              className="w-full max-w-md sm:max-w-lg lg:max-w-none h-auto object-contain"
+            />
+          </div>
         </div>
       </div>
     </>
